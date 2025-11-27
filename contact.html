@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tyler The Creator's team for inquiries and collaborations">
+    <title>Tyler The Creator | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Tyler The Creator</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="albums.html" class="nav-link">Albums</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>For business inquiries, collaborations, or general questions</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="info-item">
+                            <div class="info-icon">💼</div>
+                            <div class="info-content">
+                                <h3>Management</h3>
+                                <p>management@tylercreator.com</p>
+                                <span>For business and career opportunities</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">🎪</div>
+                            <div class="info-content">
+                                <h3>Booking</h3>
+                                <p>booking@tylercreator.com</p>
+                                <span>For concert and event bookings</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📰</div>
+                            <div class="info-content">
+                                <h3>Press</h3>
+                                <p>press@tylercreator.com</p>
+                                <span>For media and press inquiries</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">🎨</div>
+                            <div class="info-content">
+                                <h3>Collaborations</h3>
+                                <p>collab@tylercreator.com</p>
+                                <span>For creative partnerships</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send a Message</h2>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="booking">Booking</option>
+                                <option value="press">Press Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Type your message here..."></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <div class="button-hover-effect"></div>
+                        </button>
+                        <div id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tyler The Creator. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Spotify</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
